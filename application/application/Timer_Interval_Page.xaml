@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="application.Timer_Interval_Page"
+             Title="Interval">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+            <Label Text="Work"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Entry x:Name="txtWMinutes"
+                       Text="00"/>
+                <Label Text=":"/>
+                <Entry x:Name="txtWSecs"
+                       Text="00"/>
+            </StackLayout>
+            <Label Text="Rest"/>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                    <Entry x:Name="txtRMinutes"
+                       Text="00"/>
+                    <Label Text=":"/>
+                    <Entry x:Name="txtRSecs"
+                       Text="00"/>
+                </StackLayout>
+
+                <Label Text="Cycles"/>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                    <Entry x:Name="txtCycles"
+                       Text="00"/>
+                </StackLayout>
+
+                <Label Text="Rest btw Sets"/>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                    <Entry x:Name="txtRBSMin"
+                       Text="00"/>
+                    <Label Text=":"/>
+                    <Entry x:Name="txtRBSSecs"
+                       Text="00"/>
+                </StackLayout>
+                <Label Text="Sets"/>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Entry x:Name="txtSets"
+                       Text="00"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnStartWork"
+                            Clicked="btnStartWork_OnClick"
+                            Text="Start"/>
+                    <Button x:Name="btnStop" 
+                            Clicked="btnStop_OnClick"
+                            Text="Stop"/>
+                </StackLayout>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

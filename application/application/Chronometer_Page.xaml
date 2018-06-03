@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="application.Chronometer_Page"
+             Title="Chronomether">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Padding="60">
+                <Label x:Name="labelTimer"
+                   Text="00:00:00:000"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                
+                <Button Clicked ="btnStart_OnClick"
+                x:Name="btnStart"
+                Text="Start"/>
+
+                <Button  Clicked ="btnStop_OnClick"
+                x:Name="btnStop"
+                Text="Stop"/>
+                
+                <Button  Clicked ="btnLap_OnClick"
+                x:Name="btnLap"
+                Text="Lap"/>
+
+            </StackLayout>
+            <StackLayout>
+                <ScrollView>
+                    <StackLayout x:Name="EntriesStackLayout">
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="application.Exercice_Details"
+             Title="Exercise Time!">
+    <StackLayout>
+        <Label x:Name="MainLabel" />
+        <ListView 
+            x:Name="MainListView"
+            HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell >
+                        <StackLayout Orientation="Horizontal"
+                                     Padding="60"
+                                     Spacing="20">
+
+                            <Image  Source = "https://t2.uc.ltmcdn.com/images/9/9/3/img_como_saber_si_el_ejercicio_esta_funcionando_29399_orig.jpg"
+                                    WidthRequest = "50"
+                                    HeightRequest = "50"
+                                    MinimumHeightRequest = "15"
+                                    MinimumWidthRequest = "15"
+                            />
+                            <Label Text="{Binding Nombre}" />
+                            <Label Text="{Binding Tiempo}" />
+
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

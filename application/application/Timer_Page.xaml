@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="application.Timer_Page"
+             Title="Temp.">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Entry x:Name="txtHrs"
+                       Text="00"/>
+                <Label Text=":"/>
+                <Entry x:Name="txtMin"
+                       Text="00"/>
+                <Label Text=":"/>
+                <Entry x:Name="txtSecs"
+                       Text="00"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Button x:Name="btnRestart"
+                        Clicked="btnRestart_OnClick"
+                            Text="Restart"/>
+
+                <Button x:Name="btnStartCountDown"
+                        Clicked="btnStartCountDown_OnClick"
+                        Text="Start"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
